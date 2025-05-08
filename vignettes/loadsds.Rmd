@@ -2,7 +2,7 @@
 title: "Using the sdsload package"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Using the loadsds package}
+  %\VignetteIndexEntry{Using the sdsload package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -48,7 +48,6 @@ If unavailable classes; unquoted arguments; or otherwise funky arguments are pas
 ```{r}
 try(load_sds(sds_100))
 ```
-
 returns: 
 Error in load_sds(sds_100) : 
 Class names must be in quotes.
