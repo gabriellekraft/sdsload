@@ -1,9 +1,10 @@
 Package: sdsload
-Title: What the Package Does (One Line, Title Case)
+Title: A package that loads all necessary packages for a selection of Smith College Statistical and Data Science classes
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Gabrielle", "Kraft", , "gkraft@smith.edu", role = c("aut", "cre"))
+    person("Sofija", "Stankovic", , "sstankovic@smith.edu", role = c("aut"))
+Description: A package that loads all necessary packages for a selection of Smith College Statistical and Data Science classes. Current offerings include SDS100, SDS192, SDS220, and SDS 291.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
