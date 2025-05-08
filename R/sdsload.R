@@ -1,15 +1,29 @@
-#' @title SDSLOAD
+#' @title A guide to load_sds()
 #' @description
-#' - This package provides a function to automatically load or install R packages associated with specific SDS courses at Smith.
+#' - This function automatically loads and optionally installs R packages required for specific Statistical and Data Sciences courses at Smith College.
+#' - Designed to streamline course preparation by handling core packages with one call.
 #'
-#' Given a comic number, the `xkcd()` function calls the xkcd JSON API and returns metadata about the comic in the form of a list object.
-#'
-#' @param sds_class A string indicating the course code (e.g "sds_100").Must be one of the defined course names in 'class_packages'.
-#' @param install_missing Logical. If 'TRUE' missing packages will be installed. If 'FALSE', only attempt to load already installed packages.
+#' @param sds_class A string indicating the course code (e.g., `"sds_100"`). Must be one of the defined course names in `class_packages`.
+#' @param install_missing Logical. If `TRUE`, missing packages will be installed automatically. If `FALSE`, the function will only attempt to load already-installed packages.
 #' @details
-#' Valid course names include:"sds_100", "sds_192", "sds_220", and "sds_291".The function will stop and show an error message if the input is unquoted or invalid.
+#' - **Valid course names**: `"sds_100"`, `"sds_192"`, `"sds_220"`, `"sds_291"`.
+#' - The function stops with an error and notifies user if:
+#'   - The `sds_class` argument is unquoted (e.g., `load_sds(sds_100)` instead of `load_sds("sds_100")`).
+#'   - The course name is not one of the included courses in `class_packages`.
 #'
-#' @importFrom jsonlite read_json
+#' @return
+#' Invisible, named logical vector indicating the class packages that were successfully loaded (`TRUE`/`FALSE`).
+#'
+#' @examples
+#' \dontrun{
+#' # Standard usage (installs missing packages by default):
+#' load_sds("sds_291")
+#'
+#' # Loads without installing missing packages:
+#' load_sds("sds_100", install_missing = FALSE)
+#' }
+#'
+#' @importFrom utils install.packages
 #' @export
 load_sds <- function(sds_class, install_missing = TRUE) {
 
