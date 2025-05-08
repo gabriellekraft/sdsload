@@ -2,10 +2,22 @@
 % Please edit documentation in R/sdsload.R
 \name{load_sds}
 \alias{load_sds}
-\title{Do the annotations here bae}
+\title{SDSLOAD}
 \usage{
 load_sds(sds_class, install_missing = TRUE)
 }
+\arguments{
+\item{sds_class}{A string indicating the course code (e.g "sds_100").Must be one of the defined course names in 'class_packages'.}
+
+\item{install_missing}{Logical. If 'TRUE' missing packages will be installed. If 'FALSE', only attempt to load already installed packages.}
+}
 \description{
+\itemize{
+\item This package provides a function to automatically load or install R packages associated with specific SDS courses at Smith.
+}
+
 Given a comic number, the \code{xkcd()} function calls the xkcd JSON API and returns metadata about the comic in the form of a list object.
+}
+\details{
+Valid course names include:"sds_100", "sds_192", "sds_220", and "sds_291".The function will stop and show an error message if the input is unquoted or invalid.
 }
