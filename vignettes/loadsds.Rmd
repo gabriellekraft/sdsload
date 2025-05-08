@@ -1,0 +1,64 @@
+---
+title: "Using the sdsload package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using the loadsds package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(sdsload)
+```
+
+## Loading multiple SDS packages
+
+The main function of the sdsload package is to let you load and install all required packages for a number of statistical and data sciences classes at Smith College; this package streamlines the process and ensures all necessary packages are loaded at the beginning of your R session. Let's see how we can accomplish this. First, load the `load_sds` package.
+
+Then, use the `load_sds()` function to load and, if desired, install the packages associated with the SDS classes available in this package. We'll load the introductory SDS class, SDS 100, so we'll pass "sds_100" as the argument. load_sds() then evaluates if the inputted class is available for loading:
+
+```{r}
+load_sds("sds_100")
+```
+
+The default is to install any uninstalled packages, which is communicated by the built-in install_missing = TRUE argument; the function will do this automatically unless instructed otherwise. Uninstalled packages will not be installed by passing install_missing = FALSE:
+
+```{r}
+load_sds("sds_100", install_missing = FALSE)
+```
+
+Currently, the available courses in this package are SDS 100, SDS 192, SDS 220, and SDS 291:
+
+```{r}
+load_sds("sds_100")
+load_sds("sds_192")
+load_sds("sds_220")
+load_sds("sds_291")
+```
+
+If unavailable classes; unquoted arguments; or otherwise funky arguments are passed, load_sds() will message you and inform you of available arguments and their form. For example:
+
+```{r}
+try(load_sds(sds_100))
+```
+
+returns: 
+Error in load_sds(sds_100) : 
+Class names must be in quotes.
+Correct usage: load_sds("sds_100")
+Available classes in this package are: sds_100, sds_192, sds_220, sds_291
+
+## Class Package Data
+
+The loadsds package comes with a built-in data set that stores available SDS courses and their corresponding packages:
+
+```{r}
+sdsload::class_packages
+```
