@@ -1,6 +1,6 @@
-#' Required packages for SDS courses
+#' Core packages for selected Smith College SDS courses
 #'
-#' A named list mapping SDS course codes to required R packages.
+#' A named list mapping SDS course codes to core R packages.
 #'
 #' @format A named list where:
 #' \describe{
