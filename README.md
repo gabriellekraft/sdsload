@@ -4,6 +4,10 @@
 # sdsload
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/gabriellekraft/sdsload/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gabriellekraft/sdsload/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/gabriellekraft/sdsload/graph/badge.svg)](https://app.codecov.io/gh/gabriellekraft/sdsload)
 <!-- badges: end -->
 
 The goal of sdsload is to provide a fast and simple way to load all
@@ -29,17 +33,46 @@ environment.
 
 ``` r
 library(sdsload)
-load_sds("sds_291", install_missing = TRUE)
-#> Package loaded: Stat2Data
-#> Package loaded: ggplot2
-#> Package loaded: broom
+load_sds("sds_192", install_missing = TRUE)
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
 #> Package loaded: dplyr
-#> Package loaded: equatiomatic
-#> Package loaded: performance
-#> Package loaded: see
-#> Package loaded: gridExtra
-#> Package loaded: moderndive
-#> Package loaded: GGally
+#> Package loaded: leaflet
+#> Package loaded: ggplot2
+#> Package loaded: ggpubr
+#> Warning: package 'purrr' was built under R version 4.3.3
+#> ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+#> ✔ forcats   1.0.0     ✔ stringr   1.5.1
+#> ✔ lubridate 1.9.3     ✔ tibble    3.2.1
+#> ✔ purrr     1.0.4     ✔ tidyr     1.3.1
+#> ✔ readr     2.1.5
+#> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+#> ✖ dplyr::filter() masks stats::filter()
+#> ✖ dplyr::lag()    masks stats::lag()
+#> ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+#> Package loaded: tidyverse
+#> 
+#> Package loaded: lubridate
+#> Warning: package 'openintro' was built under R version 4.3.3
+#> Package loaded: openintro
 #> Package loaded: infer
-#> Package loaded: emmeans
+#> Warning: package 'moderndive' was built under R version 4.3.3
+#> 
+#> Attaching package: 'moderndive'
+#> 
+#> The following objects are masked from 'package:openintro':
+#> 
+#>     babies, evals
+#> 
+#> Package loaded: moderndive
+#> Warning: package 'knitr' was built under R version 4.3.3
+#> Package loaded: knitr
+#> Package loaded: readr
+#> Package loaded: tidyr
 ```

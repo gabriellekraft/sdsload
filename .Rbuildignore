@@ -5,3 +5,6 @@
 ^README\.Rmd$
 ^doc$
 ^Meta$
+^\.github$
+^README\.html$
+^\.Rcheck_timestamp$

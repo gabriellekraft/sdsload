@@ -3,14 +3,7 @@
 \docType{data}
 \name{class_packages}
 \alias{class_packages}
-\title{Required packages for SDS courses}
-\format{
-A named list where:
-\describe{
-\item{Names}{SDS course codes (e.g. \"sds_100\")}
-\item{Values}{Character vectors of package dependencies}
-}
-}
+\title{Core packages for selected Smith College SDS courses}
 \source{
 Manually curated by package maintainers
 }
@@ -18,6 +11,6 @@ Manually curated by package maintainers
 data(class_packages)
 }
 \description{
-A named list mapping SDS course codes to required R packages.
+A named list mapping SDS course codes to core R packages.
 }
-\keyword{datasets}
+\keyword{internal}
