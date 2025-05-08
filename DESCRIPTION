@@ -3,7 +3,6 @@ Title: A package that loads all necessary packages for a selection of Smith Coll
 Version: 0.0.0.9000
 Authors@R: 
     person("Gabrielle", "Kraft", , "gkraft@smith.edu", role = c("aut", "cre"))
-    person("Sofija", "Stankovic", , "sstankovic@smith.edu", role = c("aut"))
 Description: A package that loads all necessary packages for a selection of Smith College Statistical and Data Science classes. Current offerings include SDS100, SDS192, SDS220, and SDS 291.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -14,3 +13,9 @@ BugReports: https://github.com/gabriellekraft/sdsload/issues
 Depends: 
     R (>= 3.5)
 LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
