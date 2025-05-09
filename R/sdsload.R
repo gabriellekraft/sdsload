@@ -48,6 +48,7 @@ load_sds <- function(sds_class, install_missing = TRUE) {
   loaded <- setNames(logical(length(sds_class)), sds_class)
   pkgs <- class_packages[[sds_class]]
 
+
   for (pkg in pkgs) {
     if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
       if (install_missing) {
