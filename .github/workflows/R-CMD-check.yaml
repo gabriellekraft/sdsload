@@ -16,6 +16,14 @@ name: R-CMD-check.yaml
 
 permissions: read-all
 
+env:
+  R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+steps:
+  - name: Install dependencies
+    run: |
+      options(repos = c(CRAN = "https://cloud.r-project.org"))
+      install.packages("readr")
+
 jobs:
   R-CMD-check:
     runs-on: ${{ matrix.config.os }}
