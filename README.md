@@ -4,8 +4,7 @@
 # Welcome to SDSLOAD! A Package Designed for Students
 
 <!-- badges: start -->
-[![Codecov test
-coverage](https://codecov.io/gh/gabriellekraft/sdsload/graph/badge.svg)](https://app.codecov.io/gh/gabriellekraft/sdsload)
+[![R-CMD-check](https://github.com/gabriellekraft/sdsload/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gabriellekraft/sdsload/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/gabriellekraft/sdsload/graph/badge.svg)](https://app.codecov.io/gh/gabriellekraft/sdsload)
 
