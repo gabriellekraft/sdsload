@@ -7,9 +7,6 @@
 \source{
 Manually curated by package maintainers
 }
-\usage{
-data(class_packages)
-}
 \description{
 A named list mapping SDS course codes to core R packages.
 }

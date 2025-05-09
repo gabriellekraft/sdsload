@@ -36,5 +36,5 @@ Given a specified Smith SDS course number, the load_sds() function loads all pac
 
 ```{r example}
 library(sdsload)
-load_sds("sds_192", install_missing = TRUE)
+load_sds("sds_220", install_missing = TRUE)
 ```

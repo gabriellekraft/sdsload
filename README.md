@@ -29,50 +29,33 @@ devtools::install_github"gabriellekraft/sdsload")
 Given a specified Smith SDS course number, the load_sds() function loads
 all packages associated with the course. It can optionally install any
 associated packages that are not already available in a user’s R
-environment.
+environment. 
 
 ``` r
 library(sdsload)
-load_sds("sds_192", install_missing = TRUE)
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
-#> Package loaded: dplyr
-#> Package loaded: leaflet
+load_sds("sds_220", install_missing = TRUE)
 #> Package loaded: ggplot2
-#> Package loaded: ggpubr
 #> Warning: package 'purrr' was built under R version 4.3.3
 #> ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+#> ✔ dplyr     1.1.4     ✔ readr     2.1.5
 #> ✔ forcats   1.0.0     ✔ stringr   1.5.1
 #> ✔ lubridate 1.9.3     ✔ tibble    3.2.1
 #> ✔ purrr     1.0.4     ✔ tidyr     1.3.1
-#> ✔ readr     2.1.5
 #> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 #> ✖ dplyr::filter() masks stats::filter()
 #> ✖ dplyr::lag()    masks stats::lag()
 #> ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 #> Package loaded: tidyverse
 #> 
-#> Package loaded: lubridate
-#> Warning: package 'openintro' was built under R version 4.3.3
-#> Package loaded: openintro
-#> Package loaded: infer
+#> Package loaded: dplyr
 #> Warning: package 'moderndive' was built under R version 4.3.3
-#> 
-#> Attaching package: 'moderndive'
-#> 
-#> The following objects are masked from 'package:openintro':
-#> 
-#>     babies, evals
-#> 
 #> Package loaded: moderndive
-#> Warning: package 'knitr' was built under R version 4.3.3
-#> Package loaded: knitr
+#> Package loaded: infer
 #> Package loaded: readr
 #> Package loaded: tidyr
+#> Package loaded: gapminder
+#> Package loaded: skimr
+#> Package loaded: purrr
+#> Package loaded: tibble
+#> Package loaded: forcats
 ```

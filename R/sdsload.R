@@ -26,7 +26,8 @@
 #' @importFrom utils install.packages
 #' @export
 load_sds <- function(sds_class, install_missing = TRUE) {
-  class_packages <- getFromNamespace("class_packages", "sdsload")
+
+
   users_class <- substitute(sds_class)
 
   if (is.symbol(users_class)) {
