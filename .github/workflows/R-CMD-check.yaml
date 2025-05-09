@@ -1,5 +1,12 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
+jobs:
+  R-CMD-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.2.3'
 on:
   push:
     branches: [main, master]
