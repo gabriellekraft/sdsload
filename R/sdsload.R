@@ -27,7 +27,6 @@
 #' @export
 load_sds <- function(sds_class, install_missing = TRUE) {
 
-
   users_class <- substitute(sds_class)
 
   if (is.symbol(users_class)) {
