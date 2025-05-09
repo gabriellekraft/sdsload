@@ -29,7 +29,7 @@ devtools::install_github"gabriellekraft/sdsload")
 Given a specified Smith SDS course number, the load_sds() function loads
 all packages associated with the course. It can optionally install any
 associated packages that are not already available in a user’s R
-environment. 
+environment.
 
 ``` r
 library(sdsload)
