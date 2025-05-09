@@ -10,4 +10,3 @@ library(testthat)
 library(sdsload)
 
 test_check("sdsload")
-skip_on_os("windows")
