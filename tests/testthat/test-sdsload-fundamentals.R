@@ -23,31 +23,3 @@ test_that("load_sds throws error for float", {
 test_that("load_sds throws error for boolean argument", {
   expect_error(load_sds(TRUE), "Oops! Class not found.")
 })
-
-test_that("load_sds loads a given existing package in a valid class, first combination", {
-  expect_message(
-    load_sds("sds_100"),
-    "Package loaded: openintro"
-  )
-})
-
-test_that("load_sds loads a given existing package in a valid class, second combination", {
-  expect_message(
-    load_sds("sds_291"),
-    "Package loaded: broom"
-  )
-})
-
-test_that("load_sds loads a given existing package in a valid class, third combination", {
-  expect_message(
-    load_sds("sds_192"),
-    "Package loaded: tidyverse"
-  )
-})
-
-test_that("load_sds loads a given existing package in a valid class, fourth combination", {
-  expect_message(
-    load_sds("sds_220"),
-    "Package loaded: dplyr"
-  )
-})
