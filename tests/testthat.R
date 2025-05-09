@@ -8,5 +8,4 @@
 
 library(testthat)
 library(sdsload)
-
 test_check("sdsload")
